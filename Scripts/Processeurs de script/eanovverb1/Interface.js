@@ -2,18 +2,11 @@ Content.makeFrontInterface(800, 400);
 
 const var WET = Content.getComponent("WET");
 const var reverb1 = Synth.getEffect("reverb1");
-const var Delay1 = Synth.getEffect("Delay1");
-
-const var DRY = Content.getComponent("DRY");
-const var GAIN2 = Synth.getEffect("GAIN2");
 
 const var GAIN3 = Synth.getEffect("GAIN3");
-const var GAIN4 = Synth.getEffect("GAIN4");
-const var DELAYVERB = Content.getComponent("DELAYVERB");
-const var DELAYVERBfeedback = Content.getComponent("DELAYVERBfeedback");
+const var DELAYVERBfeedback = Content.getComponent("DELAYVERBfeedback")
 
-
-const var PRESET = Content.getComponent("PRESET");
+const var PRESET = Content.get
 
 const var Panel1 = Content.getComponent("Panel1");
 
@@ -21,13 +14,6 @@ const var Panel1 = Content.getComponent("Panel1");
 
 
 inline function onPRESETControl(component, value)
-{
-	Panel1.showControl(value);
-};
-
-Content.getComponent("PRESET").setControlCallback(onPRESETControl);
-
-
 
 
 
@@ -50,18 +36,6 @@ inline function onDELAYVERBControl(component, value)
 };
 
 Content.getComponent("DELAYVERB").setControlCallback(onDELAYVERBControl);
-
-
-
-
-
-inline function onDELAYVERBfeedbackControl(component, value)
-{
-	Delay1.setAttribute(Delay1.FeedbackRight, value);
-	Delay1.setAttribute(Delay1.FeedbackLeft, value);
-};
-
-Content.getComponent("DELAYVERBfeedback").setControlCallback(onDELAYVERBfeedbackControl);
 
 
 
