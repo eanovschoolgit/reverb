@@ -70,29 +70,6 @@
               <ChildProcessors/>
             </Processor>
           </ChildProcessors>
-          <RoutingMatrix NumSourceChannels="4" Channel0="-1" Send0="-1" Channel1="-1"
-                         Send1="-1" Channel2="2" Send2="-1" Channel3="3" Send3="-1"/>
-        </Processor>
-        <Processor Type="CurveEq" ID="Parametriq EQ1" Bypassed="0" NumFilters="1"
-                   Band0="0.165518" Band1="20" Band2="0.65" Band3="1" Band4="1"
-                   FFTEnabled="0">
-          <ChildProcessors/>
-          <RoutingMatrix NumSourceChannels="4" Channel0="-1" Send0="-1" Channel1="-1"
-                         Send1="-1" Channel2="2" Send2="-1" Channel3="3" Send3="-1"/>
-        </Processor>
-        <Processor Type="CurveEq" ID="Parametriq EQ2" Bypassed="0" NumFilters="1"
-        </Processor>
-        <Processor Type="SimpleReverb" ID="reverb1" Bypassed="0" RoomSize="0.5"
-                   Damping="0" WetLevel="0.78125" DryLevel="0.21875" Width="1" FreezeMode="0.1">
-          <ChildProcessors/>
-          <RoutingMatrix NumSourceChannels="4" Channel0="-1" Send0="-1" Channel1="-1"
-                         Send1="-1" Channel2="2" Send2="-1" Channel3="3" Send3="-1"/>
-        </Processor>
-        <Processor Type="SimpleGain" ID="Simple Gain1" Bypassed="0" Gain="0" Delay="0"
-                   Width="100" Balance="0" InvertPolarity="0">
-          <ChildProcessors>
-            <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
-              <ChildProcessors/>
             </Processor>
             <Processor Type="ModulatorChain" ID="Delay Modulation" Bypassed="0" Intensity="1">
               <ChildProcessors/>
@@ -139,17 +116,6 @@
           <RoutingMatrix NumSourceChannels="4" Channel0="0" Send0="-1" Channel1="1" Send1="-1"
                          Channel2="-1" Send2="-1" Channel3="-1" Send3="-1"/>
         </Processor>
-      </ChildProcessors>
-    </Processor>
-  </ChildProcessors>
-  <RoutingMatrix NumSourceChannels="4" Channel0="0" Send0="-1" Channel1="1" Send1="-1"
-                 Channel2="-1" Send2="0" Channel3="-1" Send3="1"/>
-  <macro_controls>
-    <macro name="Macro 1" value="99.21875" midi_cc="-1">
-      <controlled_parameter id="GAIN4" parameter="0" parameter_name="Gain" min="-100.0" max="36.0"
-                            low="-100.0" high="0.0" inverted="0" readonly="1"/>
-      <controlled_parameter id="reverb1" parameter="2" parameter_name="Wet Level" min="0.0"
-                            max="1.0" low="0.0" high="1.0" inverted="0" readonly="1"/>
       <controlled_parameter id="GAIN5" parameter="0" parameter_name="Gain" min="-100.0" max="36.0"
                             low="0.0" high="10.0" inverted="1" readonly="1"/>
   </macro_controls>
