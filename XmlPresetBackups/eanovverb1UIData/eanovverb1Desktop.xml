@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="Image1" x="0" y="0" width="800" height="400"
+             alpha="2.57396" popupOnRightClick="0" fileName="{PROJECT_FOLDER}new/back2.jpg"/>
+  <Component type="ScriptFloatingTile" id="FloatingTile1" x="376" y="199"
+             ContentType="AudioAnalyser" bgColour="16711680" itemColour="4278244351"
+             itemColour2="16711680" textColour="16761035" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Analyser&quot;,&#13;&#10;  &quot;Index&quot;: 0&#13;&#10;}"
+             width="195" height="167"/>
+  <Component type="ScriptFloatingTile" id="FloatingTile2" x="376" y="200"
+             ContentType="AudioAnalyser" bgColour="16711680" itemColour="4278244351"
+             itemColour2="16711680" textColour="16761035" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Analyser&quot;,&#13;&#10;  &quot;Index&quot;: 0&#13;&#10;}"
+             width="195" height="167"/>
+  <Component type="ScriptFloatingTile" id="FloatingTile3" x="376" y="201"
+             ContentType="AudioAnalyser" bgColour="16711680" itemColour="4278244351"
+             itemColour2="16711680" textColour="16761035" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Analyser&quot;,&#13;&#10;  &quot;Index&quot;: 0&#13;&#10;}"
+             width="195" height="167"/>
+  <Component type="ScriptFloatingTile" id="FloatingTile4" x="376" y="202"
+             ContentType="AudioAnalyser" bgColour="16711680" itemColour="4278244351"
+             itemColour2="16711680" textColour="16761035" Data="{&#13;&#10;  &quot;ProcessorId&quot;: &quot;Analyser&quot;,&#13;&#10;  &quot;Index&quot;: 0&#13;&#10;}"
+             width="195" height="167"/>
+  <Component type="ScriptSlider" id="DRY" x="605" y="260" max="0" min="-100"
+             middlePosition="-25" stepSize="0.1" numStrips="128" scaleFactor="0.3"
+             height="67" width="61" showValuePopup="Below" filmstripImage="{PROJECT_FOLDER}new/knob.png"
+             isPluginParameter="1" pluginParameterName="DRY" isMetaParameter="1"/>
+  <Component type="ScriptSlider" id="WET" x="699" y="260" macroControl="Macro 1"
+             middlePosition="100" max="128" numStrips="128" scaleFactor="0.3"
+             height="67" width="65" showValuePopup="Below" defaultValue="100"
+             filmstripImage="{PROJECT_FOLDER}new/knob.png" isPluginParameter="1"
+             pluginParameterName="WET" isMetaParameter="1"/>
+  <Component type="ScriptSlider" id="SIZE" x="36" y="102" processorId="" scaleFactor="0.3"
+             numStrips="128" width="78" height="80" showValuePopup="Above"
+             defaultValue="0.5" filmstripImage="{PROJECT_FOLDER}new/knob.png"
+             isPluginParameter="1" mode="NormalizedPercentage" suffix="%"
+             middlePosition="0.5" pluginParameterName="SIZE" isMetaParameter="1"/>
+  <Component type="ScriptSlider" id="DAMPING" x="111" y="102" processorId="reverb1"
+             parameterId="Damping" scaleFactor="0.3" numStrips="128" width="78"
+             height="80" showValuePopup="Above" filmstripImage="{PROJECT_FOLDER}new/knob.png"
+             isPluginParameter="1" pluginParameterName="DAMPING" isMetaParameter="1"/>
+  <Component type="ScriptSlider" id="WIDTH" x="199" y="102" processorId="Simple Gain1"
+             parameterId="Width" max="200" middlePosition="100" defaultValue="100"
+             scaleFactor="0.3" numStrips="128" width="78" height="80" showValuePopup="Above"
+             filmstripImage="{PROJECT_FOLDER}new/knob.png" isPluginParameter="1"
+             pluginParameterName="WIDTH" isMetaParameter="1"/>
+  <Component type="ScriptSlider" id="HP" x="695" y="102" processorId="Parametriq EQ1"
+             parameterId="Freq" max="20000" middlePosition="100" mode="Frequency"
+             scaleFactor="0.3" numStrips="128" width="78" height="80" showValuePopup="Above"
+             filmstripImage="{PROJECT_FOLDER}new/knob.png" isPluginParameter="1"
+             pluginParameterName="HP" isMetaParameter="1"/>
+  <Component type="ScriptSlider" id="LP" x="608" y="102" processorId="Parametriq EQ2"
+             parameterId="Freq" max="20000" middlePosition="1500" defaultValue="20000"
+             mode="Frequency" scaleFactor="0.3" numStrips="128" width="78"
+             height="80" showValuePopup="Above" filmstripImage="{PROJECT_FOLDER}new/knob.png"
+             isPluginParameter="1" pluginParameterName="LP" isMetaParameter="1"/>
+  <Component type="ScriptSlider" id="DELAYVERB" x="274" y="102" middlePosition="1100"
+             max="20000" mode="Time" scaleFactor="0.3" numStrips="128" width="78"
+             height="80" showValuePopup="Above" filmstripImage="{PROJECT_FOLDER}new/knob.png"
+             isPluginParameter="1" pluginParameterName="DELAY" isMetaParameter="1"/>
+  <Component type="ScriptSlider" id="DELAYVERBfeedback" x="476" y="102" middlePosition="0.5"
+             mode="Discrete" scaleFactor="0.3" numStrips="128" width="78"
+             height="80" showValuePopup="Above" filmstripImage="{PROJECT_FOLDER}new/knob.png"
+             isPluginParameter="1" stepSize="1" max="100" pluginParameterName="FEEDBACK"
+             isMetaParameter="1"/>
+  <Component type="ScriptSlider" id="WETDELAYVERB" x="394" y="102" middlePosition="0.5"
+             mode="NormalizedPercentage" processorId="Delay1" parameterId="Mix"
+             scaleFactor="0.3" numStrips="128" width="78" height="80" suffix="%"
+             showValuePopup="Above" defaultValue="1" filmstripImage="{PROJECT_FOLDER}new/knob.png"
+             isPluginParameter="1" pluginParameterName="wet delay" isMetaParameter="1"/>
+  <Component type="ScriptSlider" id="monoMeter" x="381" y="212" middlePosition="0.1"
+             numStrips="128" width="22" height="141" filmstripImage="{PROJECT_FOLDER}vu3128.png"
+             scaleFactor="1.2"/>
+  <Component type="ScriptButton" id="PRESET" x="9" y="369" bgColour="16777215"
+             textColour="16777215"/>
+  <Component type="ScriptPanel" id="Panel1" x="299" y="202" width="275" height="156"
+             itemColour="4278190080" itemColour2="4278190080" bgColour="4294967295"
+             textColour="4278190080" visible="0">
+    <Component type="ScriptFloatingTile" id="FloatingTile5" x="1" y="3" parentComponent="Panel1"
+               width="272" height="142" ContentType="PresetBrowser" bgColour="4160749568"
+               itemColour="4283551743" itemColour2="4294951115" Data="{&#13;&#10;  &quot;ShowSaveButton&quot;: true,&#13;&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#13;&#10;  &quot;ShowFolderButton&quot;: true,&#13;&#10;  &quot;ShowNotes&quot;: false,&#13;&#10;  &quot;ShowEditButtons&quot;: true,&#13;&#10;  &quot;ShowFavoriteIcon&quot;: false,&#13;&#10;  &quot;NumColumns&quot;: 1,&#13;&#10;  &quot;ColumnWidthRatio&quot;: [&#13;&#10;    0.3333333333333333,&#13;&#10;    0.3333333333333333,&#13;&#10;    0.3333333333333333&#13;&#10;  ]&#13;&#10;}"
+               FontSize="9" Font="Cooper"/>
+  </Component>
+</ContentProperties>

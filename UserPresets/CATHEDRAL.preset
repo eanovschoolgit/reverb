@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Preset Version="1.0.0">
+  <Content Processor="Interface">
+    <Control type="ScriptSlider" id="DRY" value="-6.7"/>
+    <Control type="ScriptSlider" id="WET" value="112.12"/>
+    <Control type="ScriptSlider" id="SIZE" value="0.78"/>
+    <Control type="ScriptSlider" id="DAMPING" value="0"/>
+    <Control type="ScriptSlider" id="WIDTH" value="151.61"/>
+    <Control type="ScriptSlider" id="HP" value="0"/>
+    <Control type="ScriptSlider" id="LP" value="6139.32"/>
+    <Control type="ScriptSlider" id="DELAYVERB" value="148.17"/>
+    <Control type="ScriptSlider" id="DELAYVERBfeedback" value="0.46"/>
+    <Control type="ScriptSlider" id="WETDELAYVERB" value="0.42"/>
+    <Control type="ScriptSlider" id="monoMeter" value="0.134324"/>
+    <Control type="ScriptButton" id="PRESET" value="1"/>
+  </Content>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Preset>
