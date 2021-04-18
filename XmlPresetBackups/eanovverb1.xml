@@ -8,19 +8,6 @@
       <ChildProcessors>
         <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
           <ChildProcessors/>
-          <Content>
-            <Control type="ScriptSlider" id="DRY" value="0"/>
-            <Control type="ScriptSlider" id="WET" value="100"/>
-            <Control type="ScriptSlider" id="SIZE" value="0.5"/>
-            <Control type="ScriptSlider" id="DAMPING" value="0"/>
-            <Control type="ScriptSlider" id="WIDTH" value="100"/>
-            <Control type="ScriptSlider" id="HP" value="0"/>
-            <Control type="ScriptSlider" id="LP" value="20000"/>
-            <Control type="ScriptSlider" id="DELAYVERB" value="0"/>
-            <Control type="ScriptSlider" id="DELAYVERBfeedback" value="0"/>
-            <Control type="ScriptSlider" id="WETDELAYVERB" value="1"/>
-            <Control type="ScriptSlider" id="monoMeter" value="0"/>
-            <Control type="ScriptButton" id="PRESET" value="0"/>
           </Content>
           <UIData Source="eanovverb1UIData"/>
         </Processor>
@@ -58,16 +45,6 @@
           <RoutingMatrix NumSourceChannels="4" Channel0="0" Send0="-1" Channel1="1" Send1="-1"
                          Channel2="-1" Send2="-1" Channel3="-1" Send3="-1"/>
         </Processor>
-        <Processor Type="SimpleGain" ID="GAIN4" Bypassed="0" Gain="-21.875" Delay="0"
-                   Width="100" Balance="0" InvertPolarity="0">
-          <ChildProcessors>
-            <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
-              <ChildProcessors/>
-            </Processor>
-            <Processor Type="ModulatorChain" ID="Delay Modulation" Bypassed="0" Intensity="1">
-              <ChildProcessors/>
-            </Processor>
-            <Processor Type="ModulatorChain" ID="Width Modulation" Bypassed="0" Intensity="1">
               <ChildProcessors/>
             </Processor>
             <Processor Type="ModulatorChain" ID="Pan Modulation" Bypassed="0" Intensity="1">
@@ -104,18 +81,6 @@
                          Send1="-1" Channel2="2" Send2="-1" Channel3="3" Send3="-1"/>
         </Processor>
         <Processor Type="CurveEq" ID="Parametriq EQ2" Bypassed="0" NumFilters="1"
-                   Band0="0.165518" Band1="20000" Band2="1" Band3="1" Band4="0"
-                   FFTEnabled="0">
-          <ChildProcessors/>
-          <RoutingMatrix NumSourceChannels="4" Channel0="-1" Send0="-1" Channel1="-1"
-                         Send1="-1" Channel2="2" Send2="-1" Channel3="3" Send3="-1"/>
-        </Processor>
-        <Processor Type="Delay" ID="Delay1" Bypassed="0" DelayTimeLeft="0" DelayTimeRight="0"
-                   FeedbackLeft="0" FeedbackRight="0" LowPassFreq="20000" HiPassFreq="40"
-                   Mix="1" TempoSync="0">
-          <ChildProcessors/>
-          <RoutingMatrix NumSourceChannels="4" Channel0="-1" Send0="-1" Channel1="-1"
-                         Send1="-1" Channel2="2" Send2="-1" Channel3="3" Send3="-1"/>
         </Processor>
         <Processor Type="SimpleReverb" ID="reverb1" Bypassed="0" RoomSize="0.5"
                    Damping="0" WetLevel="0.78125" DryLevel="0.21875" Width="1" FreezeMode="0.1">
@@ -151,23 +116,6 @@
                    Width="100.8" Balance="0" InvertPolarity="0">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1">
-              <ChildProcessors/>
-            </Processor>
-            <Processor Type="ModulatorChain" ID="Delay Modulation" Bypassed="0" Intensity="1">
-              <ChildProcessors/>
-            </Processor>
-            <Processor Type="ModulatorChain" ID="Width Modulation" Bypassed="0" Intensity="1">
-              <ChildProcessors/>
-            </Processor>
-            <Processor Type="ModulatorChain" ID="Pan Modulation" Bypassed="0" Intensity="1">
-              <ChildProcessors/>
-            </Processor>
-          </ChildProcessors>
-          <RoutingMatrix NumSourceChannels="4" Channel0="-1" Send0="0" Channel1="-1" Send1="1"
-                         Channel2="2" Send2="-1" Channel3="3" Send3="-1"/>
-        </Processor>
-        <Processor Type="Analyser" ID="Analyser" Bypassed="0" BufferSize="8192"
-                   PreviewType="2">
           <ChildProcessors/>
           <RoutingMatrix NumSourceChannels="4" Channel0="-1" Send0="-1" Channel1="-1"
                          Send1="-1" Channel2="2" Send2="-1" Channel3="3" Send3="-1"/>
@@ -204,14 +152,6 @@
                             max="1.0" low="0.0" high="1.0" inverted="0" readonly="1"/>
       <controlled_parameter id="GAIN5" parameter="0" parameter_name="Gain" min="-100.0" max="36.0"
                             low="0.0" high="10.0" inverted="1" readonly="1"/>
-    </macro>
-    <macro name="Macro 2" value="0.0" midi_cc="-1"/>
-    <macro name="Macro 3" value="0.0" midi_cc="-1"/>
-    <macro name="Macro 4" value="0.0" midi_cc="-1"/>
-    <macro name="Macro 5" value="0.0" midi_cc="-1"/>
-    <macro name="Macro 6" value="0.0" midi_cc="-1"/>
-    <macro name="Macro 7" value="0.0" midi_cc="-1"/>
-    <macro name="Macro 8" value="0.0" midi_cc="-1"/>
   </macro_controls>
   <MidiAutomation/>
   <MPEData Enabled="0"/>
